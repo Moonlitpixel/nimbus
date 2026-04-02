@@ -43,15 +43,18 @@ I built this to practice real-world data engineering: collecting data, storing i
 - Built with Next.js and Tailwind  
 
 ---
-
 ## 📂 Project Structure
+
+```
 nimbus/
-├── dashboard/
-├── data/
-├── database/
-├── notebooks/
-├── pipeline/
-├── venv/
+├── dashboard/          # Next.js frontend
+├── data/               # raw and processed data
+├── database/           # DuckDB files
+├── notebooks/          # experiments / analysis
+├── pipeline/           # ETL scripts
+├── venv/               # Python environment (ignored in Git)
 ├── .gitignore
 ├── README.md
-├── requirements.txt
+└── requirements.txt
+```
+
