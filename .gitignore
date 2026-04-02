@@ -1,0 +1,62 @@
+# ----------------------
+# Python
+# ----------------------
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ----------------------
+# Node / Next.js
+# ----------------------
+node_modules/
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Environment variables
+# ----------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----------------------
+# OS / System files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Editor / IDE
+# ----------------------
+.vscode/
+.idea/
+
+# ----------------------
+# Database / Data files
+# ----------------------
+database/*.duckdb
+database/*.db
+
+# Optional (if large datasets)
+data/raw/
+data/processed/
+
+# ----------------------
+# Misc
+# ----------------------
+coverage/
