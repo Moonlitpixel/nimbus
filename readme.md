@@ -17,7 +17,7 @@ I built this to practice real-world data engineering: collecting data, storing i
 | Language   | TypeScript             | Safer data handling |
 | Backend    | Python (Pandas)        | Data processing and cleaning |
 | Database   | DuckDB                 | Lightweight and fast for analytics |
-| AI         | Claude API             | Generate simple weather advice |
+| AI         | Gemini API             | Generate simple weather advice |
 
 ---
 
