@@ -1,62 +1,62 @@
-# ----------------------
-# Python
-# ----------------------
+# ------------------------------------------------------------
+# NIMBUS MONOREPO GITIGNORE
+# ------------------------------------------------------------
+
+# --- Python & Data Engineering ---
 venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
-
-# Jupyter Notebook
 .ipynb_checkpoints/
 
-# ----------------------
-# Node / Next.js
-# ----------------------
-node_modules/
-.next/
-out/
-dist/
+# --- Databases (Keep the code, ignore the heavy data) ---
+*.db
+*.sqlite3
+database/*.duckdb
+database/*.db
+data/raw/
+data/processed/
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# --- Node / Next.js (Handles root or subfolders like /dashboard) ---
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/build/
+**/.vercel
+**/.pnp
+**/.pnp.*
+**/.yarn/*
+!**.yarn/patches
+!**.yarn/plugins
+!**.yarn/releases
+!**.yarn/versions
 
-# ----------------------
-# Environment variables
-# ----------------------
+# --- Environment Variables (CRITICAL: Protects your Claude API Key) ---
 .env
+.env*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# ----------------------
-# OS / System files
-# ----------------------
+# --- Logs & Debugging ---
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+**/coverage/
+
+# --- TypeScript ---
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# --- OS / System Files ---
 .DS_Store
 Thumbs.db
+*.pem
 
-# ----------------------
-# Editor / IDE
-# ----------------------
+# --- Editor / IDE ---
 .vscode/
 .idea/
-
-# ----------------------
-# Database / Data files
-# ----------------------
-database/*.duckdb
-database/*.db
-
-# Optional (if large datasets)
-data/raw/
-data/processed/
-
-# ----------------------
-# Misc
-# ----------------------
-coverage/
